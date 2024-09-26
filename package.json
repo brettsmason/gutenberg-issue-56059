@@ -1,0 +1,22 @@
+{
+  "name": "gutenberg-issue-56059",
+  "workspaces": [
+    "web/app/plugins/example-dynamic",
+    "web/app/plugins/example-static"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "format": "wp-scripts format --workspaces --if-present",
+    "lint:css": "wp-scripts lint-style --workspaces --if-present",
+    "lint:js": "wp-scripts lint-js --workspaces --if-present",
+    "packages-update": "wp-scripts packages-update --workspaces --if-present",
+    "plugin-zip": "wp-scripts plugin-zip --workspaces --if-present",
+    "start": "wp-scripts start --workspaces --if-present",
+    "create-block": "npm run create-block -w=example-dynamic"
+  },
+  "author": "",
+  "license": "ISC"
+}
